@@ -3,7 +3,7 @@
 
 ## Yêu cầu
 
-1. Cách tạo bot **[Guide](https://polowis.home.blog/2019/01/21/huong-dan-tao-bot-tren-discord-p1/**
+1. Cách tạo bot **[Guide](https://polowis.home.blog/2019/01/21/huong-dan-tao-bot-tren-discord-p1/)**
 2. Node.js v16.6.1 trở lên
 3. 
 ## Setup bot
