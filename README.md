@@ -12,6 +12,19 @@ Copy hoặc Đổi tên `example.env` thành `.env` và điền các thông tin 
 
 **Lưu ý:** Không để lộ token bot chính, có thể dùng bot phụ, nếu có lỡ push github thì discord sẽ báo với bạn, hãy truy cập vào trang bot để đổi lại token tránh rủi ro cho sau này.
 
+
 ```env
   TOKEN=<Token bot của bạn>
+```
+
+## Cài thư viện và chạy bot test
+Bạn cần setup bot trước qua lệnh shell:
+```
+npm i
+```
+để tiến hành cài đặt thư viện của bot
+
+Cách chạy bot:
+```
+node .
 ```
