@@ -4,11 +4,11 @@
 ## Yêu cầu
 
 1. Cách tạo bot **[Guide](https://polowis.home.blog/2019/01/21/huong-dan-tao-bot-tren-discord-p1/)**
-2. Node.js v16.6.1 trở lên
-3. 
+2. Node.js v16 trở lên
 ## Setup bot
 
-Copy hoặc Đổi tên `example.env` thành `.env` và điền các thông tin vào:
+- Copy hoặc Đổi tên `example.env` thành `.env` và điền các thông tin vào:
+- Trong phần baseHandler, nếu bạn muốn set server riêng, thì phải đổi lại guild id server của bạn.
 
 **Lưu ý:** Không để lộ token bot chính, có thể dùng bot phụ, nếu có lỡ push github thì discord sẽ báo với bạn, hãy truy cập vào trang bot để đổi lại token tránh rủi ro cho sau này.
 
