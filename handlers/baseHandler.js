@@ -1,12 +1,8 @@
-const { readdirSync, read } = require('fs');
-
+const { readdirSync } = require('fs');
 const client = require('../index');
 
-// Event handler
 readdirSync('./events/').forEach(file => require('../events/' + file));
 
-
-// Command handler
 readdirSync('./commands/').forEach(dir => {
     const commands = readdirSync(`./commands/${dir}/`);
 
@@ -22,13 +18,11 @@ readdirSync('./commands/').forEach(dir => {
 });
 
 let cmd = [];
-
-// Slash command handler
-readdirSync('./slashs/').forEach(dir => {
-    const slash = readdirSync(`./slashs/${dir}/`);
+readdirSync('./slashCommands/').forEach(dir => {
+    const slash = readdirSync(`./slashCommands/${dir}/`);
 
     slash.forEach(file => {
-        const pull = require(`../slashs/${dir}/${file}`);
+        const pull = require(`../slashCommands/${dir}/${file}`);
 
         if(pull.name) {
             client.slashCmds.set(pull.name, pull);
@@ -39,10 +33,4 @@ readdirSync('./slashs/').forEach(dir => {
     });
 });
 
-client.on('ready', async() => {
-    // load slash command 1 guild
-    client.guilds.cache.get("869076561075261460").commands.set(cmd);
-
-    // load slash command nhieu guild
-    // client.application.commands.set(cmd);
-});
+client.on('ready', async() => setTimeout(async() => await client.application.commands.set(cmd), 3000));

@@ -17,6 +17,10 @@
   TOKEN=<Token bot của bạn>
 ```
 
+```Config
+  "!": Nhập prefix của bạn cho bot
+```
+
 ## Cài thư viện và chạy bot test
 Bạn cần setup bot trước qua lệnh shell:
 ```
