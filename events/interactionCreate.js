@@ -3,7 +3,7 @@ const client = require('../index');
 client.on('interactionCreate', async (interaction) => {
     if(!interaction.isCommand()) return;
 
-    const cmd = client.slashCmds.get(interaction.commandName);
+    const cmd = client.slashCommands.get(interaction.commandName);
 
     if(!cmd) return;
 
