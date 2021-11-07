@@ -7,8 +7,8 @@
 2. Node.js v16 trở lên
 ## Setup bot
 
-- Copy hoặc Đổi tên `example.env` thành `.env` và điền các thông tin vào:
-- Trong phần baseHandler, nếu bạn muốn set server riêng, thì phải đổi lại guild id server của bạn.
+-  Đổi tên `example.env` thành `.env` để hoạt động
+- Đổi tên `config.example.json` thành `example.config.json` để đặt 1 số setting cho bot
 
 **Lưu ý:** Không để lộ token bot chính, có thể dùng bot phụ, nếu có lỡ push github thì discord sẽ báo với bạn, hãy truy cập vào trang bot để đổi lại token tránh rủi ro cho sau này.
 
