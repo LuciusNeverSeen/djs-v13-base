@@ -25,7 +25,7 @@ readdirSync('./slashCommands/').forEach(dir => {
         const pull = require(`../slashCommands/${dir}/${file}`);
 
         if(pull.name) {
-            client.slashCmds.set(pull.name, pull);
+            client.slashCommands.set(pull.name, pull);
             cmd.push(pull);
         } else {
             console.log(file + " -> Thiếu pull.name");
